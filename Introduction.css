@@ -1,0 +1,562 @@
+@font-face {
+  font-family: "JMADH";
+  src: url("font/JustMeAgainDownHere-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Typewriter-Regular";
+  src: url("font/American\ Typewriter\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Typewriter-Light";
+  src: url("font/American\ Typewriter\ Light.ttf");
+}
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/************** End CSS Reset **************/
+
+body {
+  background: linear-gradient(to bottom, #eaeeff, #e9f1ff);
+}
+
+#My-Trace,
+#My-gallery,
+#Self-intro {
+  overflow: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+#My-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#gallery-background {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+#stage1-4-c1 {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-left: -17%;
+}
+
+#stage1-1-1 {
+  grid-row: 1;
+  margin-top: -5%;
+}
+
+#stage4-1-2 {
+  grid-row: 2;
+  margin-top: 7%;
+}
+
+#stage1-1-3 {
+  grid-row: 3;
+  margin-top: 7%;
+}
+
+#stage4-1-4 {
+  grid-row: 4;
+  margin-top: 7%;
+}
+
+#stage2-3-c2 {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-left: -7%;
+}
+
+#stage2-2-1 {
+  grid-row: 1;
+  margin-top: -3%;
+}
+
+#stage3-2-2 {
+  grid-row: 2;
+  margin-top: 10%;
+}
+
+#stage2-2-3 {
+  grid-row: 3;
+  margin-top: 6%;
+}
+
+#stage3-2-4 {
+  grid-row: 4;
+  margin-top: 7%;
+}
+
+#stage1-4-c3 {
+  grid-column: 3;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-top: 7%;
+  margin-left: 3%;
+}
+
+#stage1-3-1 {
+  grid-row: 1;
+}
+
+#stage4-3-2 {
+  grid-row: 2;
+  margin-top: 8%;
+}
+
+#stage1-3-3 {
+  grid-row: 1;
+  margin-top: 7%;
+}
+
+#stage4-3-4 {
+  grid-row: 4;
+  margin-top: 8%;
+}
+
+#stage2-3-c4 {
+  grid-column: 4;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-top: 7%;
+  margin-left: 14%;
+}
+
+#stage2-4-1 {
+  grid-row: 1;
+}
+
+#stage3-4-2 {
+  grid-row: 2;
+  margin-top: 10%;
+}
+
+#stage2-4-3 {
+  grid-row: 3;
+  margin-top: 6%;
+}
+
+#stage3-4-4 {
+  grid-row: 4;
+  margin-top: 7%;
+}
+
+#stage1-4-c5 {
+  grid-column: 5;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-top: -5%;
+  margin-left: 25%;
+}
+
+#stage1-5-1 {
+  grid-row: 1;
+}
+
+#stage4-5-2 {
+  grid-row: 2;
+  margin-top: 8%;
+}
+
+#stage1-5-3 {
+  grid-row: 3;
+  margin-top: 7%;
+}
+
+#stage4-5-4 {
+  grid-row: 4;
+  margin-top: 8%;
+}
+
+#stage2-3-c6 {
+  grid-column: 6;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  margin-top: -3%;
+  margin-left: 23%;
+}
+
+#stage2-6-1,
+#stage3-6-2,
+#stage2-6-3,
+#stage3-6-4 {
+  grid-column: 6;
+  margin-left: 14%;
+}
+
+#stage2-6-1 {
+  grid-row: 1;
+}
+
+#stage3-6-2 {
+  grid-row: 2;
+  margin-top: 10%;
+}
+
+#stage2-6-3 {
+  grid-row: 3;
+  margin-top: 6%;
+}
+
+#stage3-6-4 {
+  grid-row: 4;
+  margin-top: 7%;
+}
+
+#Self-intro {
+  display: grid;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#Journey-background {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+#Self-intro-text {
+  grid-area: 1 / 1;
+  z-index: 2;
+  font-family: "JMADH";
+  letter-spacing: 0.1em;
+}
+
+#Hi {
+  grid-area: 1 / 1;
+  color: #2b83b0;
+  font-size: 14vw;
+  transform: rotate(-3deg);
+  margin-left: 5%;
+  margin-top: 33%;
+}
+
+#Grace {
+  color: #b4deff;
+  font-size: 12vw;
+  transform: rotate(-3deg);
+  margin-left: 17%;
+  margin-top: -55%;
+}
+
+#year,
+#imagine,
+#story,
+#utopia {
+  color: #8395c3;
+  font-size: 7vw;
+}
+
+#here {
+  color: #ffffff;
+  font-size: 7vw;
+  margin-left: 45%;
+  margin-top: -13%;
+}
+
+#start,
+#A,
+#and,
+#still {
+  color: #ffffff;
+  font-size: 5vw;
+}
+
+#start {
+  width: 30%;
+  transform: rotate(5deg);
+  margin-left: 65%;
+  margin-top: -10%;
+}
+
+#year {
+  transform: rotate(5deg);
+  margin-left: 77%;
+  margin-top: -8%;
+}
+
+#A {
+  transform: rotate(-3deg);
+  margin-left: 33%;
+}
+
+#imagine {
+  transform: rotate(-3deg);
+  margin-left: 40%;
+}
+
+#and {
+  transform: rotate(-3deg);
+  margin-left: 57%;
+  margin-top: -9%;
+}
+
+#story {
+  transform: rotate(-3deg);
+  margin-left: 67%;
+  margin-top: -9%;
+}
+
+#still {
+  transform: rotate(7deg);
+  margin-left: 53%;
+  margin-top: 7%;
+}
+
+#utopia {
+  transform: rotate(-7deg);
+  margin-left: 43%;
+  margin-top: -2%;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#My-Trace {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+#Journey-trace {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 60%;
+  margin-top: -0.7%;
+  margin-left: 23%;
+  z-index: 1;
+}
+
+#my {
+  grid-column: 1;
+  grid-row: 1;
+  color: #47516a;
+  font-family: "JMADH";
+  font-size: 5vw;
+  letter-spacing: 0.1em;
+  z-index: 2;
+  margin-left: 43%;
+  transform: rotate(5deg);
+}
+
+#Footprint1 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 21%;
+  margin-left: 10%;
+  margin-top: 5%;
+  z-index: 2;
+}
+
+#events {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+#years {
+  font-family: "JMADH";
+  color: #8395c3;
+  font-size: 3.7vw;
+  z-index: 2;
+}
+
+#details {
+  font-family: "Typewriter-Light";
+  color: #47516a;
+  font-size: 1.7vw;
+  line-height: 1.7;
+  z-index: 3;
+}
+
+#year1 {
+  margin-left: 70%;
+  margin-top: 11%;
+}
+
+#event1 {
+  width: 33%;
+  margin-left: 28%;
+  margin-top: -170%;
+}
+
+#year2 {
+  margin-left: 37%;
+  margin-top: 17%;
+}
+
+#event2 {
+  width: 37%;
+  margin-left: 53%;
+  margin-top: 12%;
+}
+
+#year3 {
+  margin-left: 47%;
+  margin-top: 14%;
+}
+
+#event3 {
+  width: 33%;
+  margin-left: 8%;
+  margin-top: 14%;
+}
+
+#year4 {
+  margin-left: 75%;
+  margin-top: 12%;
+}
+
+#event4 {
+  width: 33%;
+  margin-left: 37%;
+  margin-top: 7%;
+}
+
+#year5 {
+  margin-left: 27%;
+  margin-top: 46%;
+}
+
+#event5 {
+  text-align: center;
+  width: 67%;
+  margin-left: 14%;
+  margin-top: 10%;
+}
+
+#year6 {
+  margin-left: 50%;
+  margin-top: 18%;
+}
+
+#event6 {
+  width: 33%;
+  margin-left: 43%;
+  margin-top: 19%;
+}
+
+#year7 {
+  text-align: center;
+  margin-top: 26%;
+}
+
+#event7 {
+  width: 33%;
+  margin-left: 10%;
+  margin-top: 17%;
+}
+
+#event8 {
+  font-family: "Typewriter-Regular";
+  font-size: 2.3vw;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+}
+
+#doodles {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  z-index: 2;
+}
+
+#Classes-doodle,
+#Basketball-doodle {
+  width: 12%;
+}
+
+#Classes-doodle {
+  margin-left: 66%;
+  margin-top: 78%;
+}
+
+#Basketball-doodle {
+  margin-left: 37%;
+  margin-top: 65%;
+}
+
+#Footprint2 {
+  grid-row: 1;
+  width: 14%;
+  margin-left: 43%;
+  margin-bottom: 14%;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+}

@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "JMADH";
+  src: url("font/JustMeAgainDownHere-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Typewriter-Light";
+  src: url("font/American\ Typewriter\ Light.ttf");
+}
+
+@font-face {
+  font-family: "Typewriter-Regular";
+  src: url("font/American\ Typewriter\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Typewriter-Bold";
+  src: url("font/American\ Typewriter\ Bold.ttf");
+}
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/************** End CSS Reset **************/
+
+body {
+  background: linear-gradient(to bottom, #f7f8fb, #e8f0ff);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.type {
+  cursor: url("image/HP image/typewriter.png"), pointer;
+}
+
+#SD-cover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#SD-cover-img {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+#White-footprint-a a {
+  height: auto;
+  display: grid;
+  grid-area: 1 / -1;
+  z-index: 3;
+}
+
+#White-footprint {
+  width: 21%;
+  height: auto;
+  z-index: 3;
+  margin-left: 8%;
+  margin-top: -330%;
+}
+
+#SD-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -85%;
+}
+
+#THE,
+#DISTANT,
+#SEA {
+  grid-row: 1;
+  position: relative;
+}
+
+#THE {
+  grid-column: 1 / 3;
+  text-align: center;
+  font-family: "Typewriter-Regular";
+  font-size: 4.3vw;
+  color: #ffffff;
+  margin-right: 30%;
+  margin-top: -28%;
+  letter-spacing: 0.1em;
+}
+
+#DISTANT {
+  grid-column: 2 / 4;
+  text-align: center;
+  font-family: "Typewriter-Regular";
+  font-size: 4.3vw;
+  color: #ffffff;
+  margin-left: 25%;
+  margin-top: -14%;
+  letter-spacing: 0.1em;
+}
+
+#SEA {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-family: "JMADH";
+  font-size: 12.7vw;
+  color: #47516a;
+  letter-spacing: 0.07em;
+}
+
+#SD-info {
+  display: grid;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -60%;
+}
+
+#info1,
+#info2 {
+  font-family: "Typewriter-Regular";
+  font-size: 2.5vw;
+  color: #5a90a7;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+}
+
+#info1 {
+  margin-bottom: -30%;
+}
+
+#Excerpt-part1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#Excerpt {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-family: "Typewriter-Regular";
+  font-size: 3vw;
+  color: #47516a;
+  text-align: center;
+  margin-top: 14%;
+  letter-spacing: 0.1em;
+}
+
+#paragraph1,
+#paragraph2,
+#paragraph3,
+#sentence1 {
+  font-family: "Typewriter-Light";
+  font-size: 1.6vw;
+  color: #47516a;
+  line-height: 1.8;
+}
+
+#paragraph1 {
+  grid-column: 3;
+  grid-row: 2;
+  width: 65%;
+  text-align: right;
+  margin-top: -40%;
+}
+
+#paragraph2 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 87%;
+  margin-top: 33%;
+  margin-left: 12%;
+  z-index: 3;
+  color: #ffffff;
+}
+
+#SD-illustration {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  width: 100%;
+  z-index: 1;
+  margin-left: -5%;
+  margin-top: -10%;
+}
+
+#Rectangle-background {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  width: 47%;
+  z-index: 2;
+  margin-left: 3%;
+  margin-top: 12%;
+  z-index: 2;
+}
+
+#Excerpt-part2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#sentence1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-family: "JMADH";
+  z-index: 3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 3.7vw;
+  margin-top: 5%;
+  margin-left: 12%;
+  opacity: 0;
+}
+
+#paragraph3 {
+  width: 60%;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  margin-left: 17%;
+  margin-top: 0%;
+}
+
+#hidden-surprise {
+  font-family: "JMADH";
+  color: #2b83b0;
+  letter-spacing: 0.1em;
+  font-size: 2vw;
+  width: 60%;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  margin-left: 21%;
+  margin-top: 20%;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#SD-cute {
+  grid-row: 2;
+  width: 70%;
+  grid-column: 3 / 5;
+  margin-left: 21%;
+  margin-top: -10%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#Postscript {
+  margin-bottom: 20%;
+}
+
+#Postscript,
+#Postscript-title,
+#Postscript-text,
+#sentence2 {
+  color: #47516a;
+  text-align: center;
+}
+
+#Postscript-title {
+  font-family: "Typewriter-Regular";
+  margin-top: 14%;
+  margin-bottom: 7%;
+  font-size: 3vw;
+  letter-spacing: 0.1em;
+}
+
+#Postscript-text {
+  width: 60%;
+  font-family: "Typewriter-Light";
+  font-size: 2.1vw;
+  line-height: 1.9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#SD-outline {
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#sentence2 {
+  font-family: "JMADH";
+  letter-spacing: 0.1em;
+  font-size: 3.7vw;
+}
+
+#line {
+  font-family: "Typewriter-Light";
+  text-align: center;
+  color: #47516a;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #White-footprint {
+    width: 30%;
+  }
+}
